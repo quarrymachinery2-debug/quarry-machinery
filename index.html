@@ -1,262 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quarry Machinery & Construction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quarry Machinery & Construction | Komo, Kiambu County</title>
+<meta name="description" content="Machine-cut Ndarugo building stone, quarry operations and machinery services in Komo, Kiambu County, Kenya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stone-dark:#221f1c;
+    --stone-charcoal:#2e2a25;
+    --stone-sand:#c8a874;
+    --stone-sand-light:#e7dcc4;
+    --stone-cream:#f2ede1;
+    --rust:#a8502c;
+    --rust-dark:#823c20;
+    --ink:#221f1c;
+    --line: rgba(34,31,28,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Archivo', sans-serif;
+    color:var(--ink);
+    background:var(--stone-cream);
+    line-height:1.55;
+  }
+  h1,h2,h3, .display{
+    font-family:'Bebas Neue', sans-serif;
+    letter-spacing:0.01em;
+    line-height:0.95;
+    font-weight:400;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px;}
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  /* NAV */
+  header.site{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(34,31,28,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;max-width:1120px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--stone-cream);text-decoration:none;}
+  .brand .mark{
+    width:34px;height:34px;flex:none;
+    background:var(--rust);
+    clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Bebas Neue',sans-serif;color:var(--stone-cream);font-size:16px;
+  }
+  .brand .name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:0.03em;}
+  nav.links{display:flex;gap:28px;}
+  nav.links a{color:var(--stone-sand-light);text-decoration:none;font-size:14.5px;font-weight:600;letter-spacing:0.02em;}
+  nav.links a:hover{color:var(--rust);}
+  .nav-call{
+    background:var(--rust);color:var(--stone-cream);text-decoration:none;
+    padding:9px 18px;font-weight:700;font-size:14px;
+    clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);
+  }
+  .mobile-hide{display:flex;}
+  @media (max-width:760px){ .mobile-hide{display:none;} }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #f5f5f5;
-        }
+  /* HERO */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;align-items:flex-end;
+    background:#000;
+  }
+  .hero img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;
+    opacity:0.68;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(20,18,16,0.55) 0%, rgba(20,18,16,0.25) 35%, rgba(20,18,16,0.92) 100%);
+  }
+  .hero-content{position:relative;z-index:2;padding:0 28px 76px;max-width:1120px;margin:0 auto;width:100%;}
+  .kicker{
+    color:var(--stone-sand);font-weight:700;font-size:14px;letter-spacing:0.14em;
+    margin:0 0 14px;
+  }
+  .hero h1{
+    color:var(--stone-cream);
+    font-size:clamp(48px,9vw,108px);
+    margin:0 0 18px;
+    max-width:900px;
+  }
+  .hero p.lede{
+    color:var(--stone-sand-light);
+    font-size:clamp(16px,2vw,20px);
+    max-width:560px;
+    margin:0 0 30px;
+    font-weight:400;
+  }
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:15px;
+    padding:15px 26px;
+    clip-path:polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px);
+  }
+  .btn-primary{background:var(--rust);color:var(--stone-cream);}
+  .btn-primary:hover{background:var(--rust-dark);}
+  .btn-ghost{background:rgba(242,237,225,0.08);color:var(--stone-cream);border:1px solid rgba(242,237,225,0.4);}
+  .btn-ghost:hover{background:rgba(242,237,225,0.18);}
 
-        header {
-            background: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+  /* STRIP */
+  .strip{background:var(--rust);color:var(--stone-cream);}
+  .strip .wrap{display:flex;flex-wrap:wrap;gap:10px 40px;padding:18px 28px;justify-content:space-between;}
+  .strip span{font-weight:700;font-size:14.5px;}
+  .strip span b{font-family:'Bebas Neue';font-size:17px;font-weight:400;letter-spacing:0.02em;margin-right:6px;}
 
-        header h1 {
-            font-size: 28px;
-        }
+  section{padding:96px 0;}
+  .section-head{max-width:640px;margin:0 0 48px;}
+  .section-head .kicker{color:var(--rust);}
+  .section-head h2{font-size:clamp(34px,5vw,54px);margin:0 0 14px;color:var(--ink);}
+  .section-head p{font-size:17px;color:#4c463d;margin:0;}
 
-        header p {
-            color: #ddd;
-            margin-top: 5px;
-        }
+  /* ABOUT */
+  .about{background:var(--stone-cream);}
+  .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;}
+  .about-copy p{font-size:16.5px;color:#3a352d;margin:0 0 16px;}
+  .about-photo{position:relative;}
+  .about-photo img{
+    width:100%;height:440px;object-fit:cover;
+    clip-path:polygon(0 0, 100% 0, 100% calc(100% - 34px), calc(100% - 34px) 100%, 0 100%);
+  }
+  .stat-card{
+    position:absolute;bottom:-22px;left:-22px;
+    background:var(--stone-dark);color:var(--stone-cream);
+    padding:20px 24px;
+    max-width:220px;
+  }
+  .stat-card .num{font-family:'Bebas Neue';font-size:38px;color:var(--stone-sand);display:block;}
+  .stat-card .lbl{font-size:13px;color:var(--stone-sand-light);}
+  @media (max-width:860px){
+    .about-grid{grid-template-columns:1fr;}
+    .stat-card{position:static;margin-top:18px;max-width:none;display:inline-block;}
+  }
 
-        nav {
-            background: #d99a00;
-            padding: 12px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
+  /* SERVICES */
+  .services{background:var(--stone-dark);color:var(--stone-cream);}
+  .services .section-head h2{color:var(--stone-cream);}
+  .services .section-head p{color:var(--stone-sand-light);}
+  .services .kicker{color:var(--stone-sand);}
+  .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(242,237,225,0.12);}
+  .service-card{
+    background:var(--stone-dark);
+    position:relative;
+    overflow:hidden;
+    min-height:340px;
+    display:flex;align-items:flex-end;
+  }
+  .service-card img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    transition:transform 0.5s ease;
+    filter:saturate(0.92);
+  }
+  .service-card:hover img{transform:scale(1.06);}
+  .service-card::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(34,31,28,0) 30%, rgba(34,31,28,0.92) 100%);
+  }
+  .service-card .cnt{position:relative;z-index:2;padding:28px;}
+  .service-card h3{font-size:26px;margin:0 0 8px;color:var(--stone-cream);}
+  .service-card p{font-size:14.5px;color:var(--stone-sand-light);margin:0;max-width:340px;}
+  @media (max-width:700px){ .service-grid{grid-template-columns:1fr;} }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
+  /* GALLERY */
+  .gallery{background:var(--stone-cream);}
+  .gal-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows:150px;
+    gap:8px;
+  }
+  .gal-grid img{width:100%;height:100%;object-fit:cover;}
+  .gal-grid .big{grid-column:span 2;grid-row:span 2;}
+  @media (max-width:760px){
+    .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px;}
+    .gal-grid .big{grid-column:span 2;grid-row:span 2;}
+  }
 
-        .hero {
-            background: linear-gradient(
-                rgba(0,0,0,0.65),
-                rgba(0,0,0,0.65)
-            ),
-            #555;
-            color: white;
-            text-align: center;
-            padding: 90px 20px;
-        }
+  /* CONTACT */
+  .contact{background:var(--stone-sand-light);}
+  .contact-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;}
+  .contact-list{list-style:none;margin:0;padding:0;}
+  .contact-list li{
+    display:flex;gap:16px;align-items:flex-start;
+    padding:20px 0;border-top:1px solid var(--line);
+  }
+  .contact-list li:last-child{border-bottom:1px solid var(--line);}
+  .contact-list .ico{
+    width:40px;height:40px;flex:none;border-radius:50%;
+    background:var(--rust);color:var(--stone-cream);
+    display:flex;align-items:center;justify-content:center;font-size:17px;
+  }
+  .contact-list .lbl{font-size:13px;color:#8a7f6d;text-transform:uppercase;letter-spacing:0.06em;margin:0 0 3px;}
+  .contact-list .val{font-size:18px;font-weight:700;text-decoration:none;color:var(--ink);}
+  .contact-cta{
+    background:var(--stone-dark);color:var(--stone-cream);
+    padding:44px 36px;
+    display:flex;flex-direction:column;justify-content:center;
+    clip-path:polygon(0 0,100% 0,100% 100%,26px 100%,0 calc(100% - 26px));
+  }
+  .contact-cta h3{font-size:32px;margin:0 0 14px;}
+  .contact-cta p{color:var(--stone-sand-light);font-size:15px;margin:0 0 26px;}
+  @media (max-width:860px){ .contact-grid{grid-template-columns:1fr;} }
 
-        .hero h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 19px;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 13px 25px;
-            background: #d99a00;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 35px;
-            font-size: 30px;
-        }
-
-        .about {
-            background: white;
-            text-align: center;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px 20px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #b47d00;
-        }
-
-        .contact {
-            background: #222;
-            color: white;
-            text-align: center;
-        }
-
-        .contact h2 {
-            color: white;
-        }
-
-        .contact a {
-            color: #ffd15c;
-            text-decoration: none;
-        }
-
-        footer {
-            background: #111;
-            color: #aaa;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h2 {
-                font-size: 30px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
-        }
-    </style>
+  footer{
+    background:var(--stone-dark);color:rgba(242,237,225,0.55);
+    padding:26px 0;font-size:13.5px;
+  }
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+</style>
 </head>
-
 <body>
 
-<header>
-    <h1>QUARRY MACHINERY & CONSTRUCTION</h1>
-    <p>Quality Machine-Cut Stones & Quarry Services</p>
+<header class="site">
+  <div class="nav">
+    <a href="#home" class="brand">
+      <span class="mark">QM</span>
+      <span class="name">QUARRY MACHINERY<br>& CONSTRUCTION</span>
+    </a>
+    <nav class="links mobile-hide">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-call" href="tel:0712272180">0712 272 180</a>
+  </div>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero" id="home">
-    <h2>Quality Machine-Cut Stones</h2>
-    <p>
-        Producing quality machine-cut building stones,
-        popularly known as Ndarugo.
-    </p>
-
-    <a class="button" href="#contact">Contact Us</a>
+  <img src="images/hero-quarry-aerial.jpg" alt="Aerial view of the quarry floor with rows of freshly cut Ndarugo stone">
+  <div class="hero-content">
+    <p class="kicker">KOMO &middot; KIAMBU COUNTY &middot; KENYA</p>
+    <h1>Machine-cut stone,<br>quarried on site.</h1>
+    <p class="lede">We quarry, cut and supply Ndarugo building stone, and run the machinery and construction services that keep the site moving.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://wa.me/254712272180">Message us on WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:0712272180">Call 0712 272 180</a>
+    </div>
+  </div>
 </section>
+
+<div class="strip">
+  <div class="wrap">
+    <span><b>Ndarugo</b>machine-cut building stone</span>
+    <span><b>On-site</b>rail saws & wheel loaders</span>
+    <span><b>Komo</b>Kiambu County, Kenya</span>
+  </div>
+</div>
 
 <section class="about" id="about">
-    <h2>About Us</h2>
-
-    <p>
-        Quarry Machinery & Construction is a quarry and construction
-        business specializing in the production of quality machine-cut
-        building stones.
-    </p>
-
-    <p>
-        We operate quarry machinery and stone-cutting equipment
-        to produce building materials for construction projects.
-    </p>
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <p class="kicker" style="color:var(--rust);font-weight:700;letter-spacing:0.12em;font-size:14px;">ABOUT US</p>
+      <h2 style="font-size:clamp(30px,4.5vw,46px);margin:0 0 20px;">Quarry and construction, run on our own equipment.</h2>
+      <p>Quarry Machinery & Construction is a quarry and construction business in Komo, Kiambu County, producing quality machine-cut building stone known locally as Ndarugo.</p>
+      <p>We operate our own rail-mounted stone-cutting saws, wheel loaders and excavators on site &mdash; from cutting stone out of the quarry face to loading it for delivery. That means fewer delays between quarrying, cutting and getting material to your site.</p>
+      <p>Beyond stone production, we service and maintain quarry machinery, and support construction projects that need reliable stone and equipment.</p>
+    </div>
+    <div class="about-photo">
+      <img src="images/railsaw-closeup.jpg" alt="Rail-mounted stone-cutting saw at the quarry">
+      <div class="stat-card">
+        <span class="num">On-Site</span>
+        <span class="lbl">Cutting, loading & haulage handled with our own machinery</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="services">
-    <h2>Our Services</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Machine-Cut Stones</h3>
-            <p>
-                Quality machine-cut building stones,
-                popularly known as Ndarugo.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Quarry Operations</h3>
-            <p>
-                Quarry excavation, stone production
-                and material preparation.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Machinery Services</h3>
-            <p>
-                Quarry machinery and equipment
-                services for construction operations.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Construction</h3>
-            <p>
-                Supporting construction projects
-                with quality quarry materials.
-            </p>
-        </div>
-
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="font-weight:700;letter-spacing:0.12em;font-size:14px;">WHAT WE DO</p>
+      <h2>Our services</h2>
+      <p>Four ways we work with builders, developers and other quarry operators.</p>
     </div>
+  </div>
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="images/loading-truck.jpg" alt="Workers loading cut Ndarugo stone onto a delivery truck">
+      <div class="cnt">
+        <h3>Machine-Cut Stones</h3>
+        <p>Quality machine-cut building stone, popularly known as Ndarugo, cut to size and ready for delivery.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/quarry-aerial-truck.jpg" alt="Quarry floor with cut stone stacked in rows, seen from above">
+      <div class="cnt">
+        <h3>Quarry Operations</h3>
+        <p>Quarry excavation, stone production and material preparation across the site.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/excavator-loader.jpg" alt="Excavator and wheel loader working the quarry face">
+      <div class="cnt">
+        <h3>Machinery Services</h3>
+        <p>Quarry machinery and equipment &mdash; excavators, loaders and rail saws &mdash; run and maintained for construction operations.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="images/loader-trucks.jpg" alt="Wheel loader and delivery trucks at the quarry base">
+      <div class="cnt">
+        <h3>Construction Support</h3>
+        <p>Supporting construction projects with quality quarry materials, loading and haulage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="color:var(--rust);font-weight:700;letter-spacing:0.12em;font-size:14px;">ON SITE</p>
+      <h2>From the quarry floor</h2>
+      <p>A look at the equipment and the work, day to day.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="gal-grid">
+      <img class="big" src="images/quarry-site-overview.jpg" alt="Wide view of the quarry with excavator and bulldozer">
+      <img src="images/cut-blocks-aerial.jpg" alt="Rows of cut stone blocks and a worker at the quarry">
+      <img src="images/wheel-loader.jpg" alt="Yellow wheel loader with bucket at the yard">
+      <img src="images/railsaw-workers.jpg" alt="Stone-cutting saw with two workers on site">
+      <img src="images/generator.jpg" alt="Diesel generator powering the quarry equipment">
+      <img src="images/loader-sunset.jpg" alt="Wheel loader clearing rock at sunset">
+      <img src="images/railsaw-bulldozer.jpg" alt="Rail saw with a bulldozer working in the background">
+      <img src="images/gear-parts.jpg" alt="Bevel gear and shaft, spare parts for quarry machinery">
+    </div>
+  </div>
 </section>
 
 <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-
-    <p>📞 Phone: <a href="tel:0712272180">0712 272 180</a></p>
-
-    <p>
-        📧 Email:
-        <a href="mailto:quarrymachinery2@gmail.com">
-            quarrymachinery2@gmail.com
-        </a>
-    </p>
-
-    <p>📍 Location: Komo, Kiambu County, Kenya</p>
-
-    <a class="button"
-       href="https://wa.me/254712272180">
-       WhatsApp Us
-    </a>
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker" style="color:var(--rust);font-weight:700;letter-spacing:0.12em;font-size:14px;">GET IN TOUCH</p>
+      <h2 style="font-size:clamp(30px,4.5vw,46px);margin:0 0 24px;">Talk to us about your stone or machinery needs.</h2>
+      <ul class="contact-list">
+        <li>
+          <div class="ico">&#9742;</div>
+          <div><p class="lbl">Phone</p><a class="val" href="tel:0712272180">0712 272 180</a></div>
+        </li>
+        <li>
+          <div class="ico">&#9993;</div>
+          <div><p class="lbl">Email</p><a class="val" href="mailto:quarrymachinery2@gmail.com">quarrymachinery2@gmail.com</a></div>
+        </li>
+        <li>
+          <div class="ico">&#9679;</div>
+          <div><p class="lbl">Location</p><span class="val">Komo, Kiambu County, Kenya</span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-cta">
+      <h3>Need stone delivered<br>or machinery serviced?</h3>
+      <p>Message us on WhatsApp with your location and quantity, and we'll get back to you with pricing and availability.</p>
+      <a class="btn btn-primary" href="https://wa.me/254712272180" style="text-align:center;">WhatsApp Us</a>
+    </div>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Quarry Machinery & Construction. All rights reserved.</p>
+  <div class="wrap">
+    <span>&copy; 2026 Quarry Machinery & Construction. All rights reserved.</span>
+    <span>Komo, Kiambu County, Kenya</span>
+  </div>
 </footer>
 
 </body>
