@@ -175,6 +175,26 @@
   .service-card p{font-size:14.5px;color:var(--stone-sand-light);margin:0;max-width:340px;}
   @media (max-width:700px){ .service-grid{grid-template-columns:1fr;} }
 
+  /* EQUIPMENT */
+  .equip-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:2px;background:rgba(242,237,225,0.12);
+  }
+  .equip-card{
+    background:var(--stone-dark);padding:30px 28px;
+  }
+  .equip-card h3{font-size:24px;margin:0 0 10px;color:var(--stone-cream);}
+  .equip-card p{font-size:14.5px;color:var(--stone-sand-light);margin:0 0 10px;}
+  .equip-card .brands{font-size:13px;color:var(--stone-sand);font-weight:700;letter-spacing:0.02em;line-height:1.5;}
+
+  /* PARTNER */
+  .partner-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:32px;margin-top:8px;
+  }
+  .partner-card h3{font-size:20px;margin:0 0 10px;color:var(--ink);}
+  .partner-card p{font-size:15px;color:#4c463d;margin:0;}
+
   /* GALLERY */
   .gallery{background:var(--stone-cream);}
   .gal-grid{
@@ -244,8 +264,9 @@
     <nav class="links mobile-hide">
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#equipment">Equipment</a>
       <a href="#gallery">Gallery</a>
-      <a href="#expansion">What's Next</a>
+      <a href="#partner">Partner With Us</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="nav-call" href="tel:0712272180">0712 272 180</a>
@@ -257,7 +278,7 @@
   <div class="hero-content">
     <p class="kicker">KOMO &middot; KIAMBU COUNTY &middot; KENYA</p>
     <h1>Machine-cut stone,<br>quarried on site.</h1>
-    <p class="lede">We quarry, cut and supply Ndarugo building stone, and run the machinery and construction services that keep the site moving.</p>
+    <p class="lede">We quarry, cut and supply Ndarugo building stone &mdash; and hire out and sell heavy equipment for quarry, construction and earthmoving work.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="https://wa.me/254712272180">Message us on WhatsApp</a>
       <a class="btn btn-ghost" href="tel:0712272180">Call 0712 272 180</a>
@@ -281,6 +302,7 @@
       <p>Quarry Machinery & Construction is a quarry and construction business in Komo, Kiambu County, producing quality machine-cut building stone known locally as Ndarugo.</p>
       <p>We operate our own rail-mounted stone-cutting saws, wheel loaders and excavators on site &mdash; from cutting stone out of the quarry face to loading it for delivery. That means fewer delays between quarrying, cutting and getting material to your site.</p>
       <p>Beyond stone production, we service and maintain quarry machinery, and support construction projects that need reliable stone and equipment.</p>
+      <p>We've also grown into heavy equipment hire and sales &mdash; stone-cutting machines, wheel loaders and bulldozers &mdash; supplying quarry and construction operators beyond our own site.</p>
     </div>
     <div class="about-photo">
       <img src="images/railsaw-closeup.jpg" alt="Rail-mounted stone-cutting saw at the quarry">
@@ -328,6 +350,43 @@
         <h3>Construction Support</h3>
         <p>Supporting construction projects with quality quarry materials, loading and haulage.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="equipment" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="font-weight:700;letter-spacing:0.12em;font-size:14px;">HIRE &amp; SALES</p>
+      <h2>Heavy equipment, hired or sold</h2>
+      <p>Beyond our own site, we hire out and sell heavy machinery across these categories &mdash; and we're always open to new brands, especially from China.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="equip-grid">
+      <div class="equip-card">
+        <h3>Stone Cutting Machines</h3>
+        <p>Rail-mounted and mobile stone-cutting saws for quarry production.</p>
+        <div class="brands">Pavoni &middot; MACCA &middot; Magissa &middot; XGMA</div>
+      </div>
+      <div class="equip-card">
+        <h3>Wheel Loaders</h3>
+        <p>For loading, stockpiling and yard work at the quarry or site.</p>
+        <div class="brands">XGMA &middot; Doosan &middot; CAT</div>
+      </div>
+      <div class="equip-card">
+        <h3>Bulldozers</h3>
+        <p>For clearing, grading and overburden removal.</p>
+        <div class="brands">Shantui &middot; CAT D6 &middot; D7 &middot; D8</div>
+      </div>
+      <div class="equip-card">
+        <h3>Other Equipment</h3>
+        <p>Excavators, generators and more &mdash; especially Chinese brands. Tell us what you need.</p>
+        <div class="brands">Ask us &mdash; new brands welcome</div>
+      </div>
+    </div>
+    <div class="btn-row" style="margin-top:36px;">
+      <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20hiring%2Fbuying%20heavy%20equipment.">Ask About Hire or Sale</a>
     </div>
   </div>
 </section>
@@ -388,6 +447,33 @@
       <p style="color:var(--stone-sand);font-weight:700;letter-spacing:0.12em;font-size:14px;margin:0 0 10px;">OUR CRAFT</p>
       <h2 style="color:var(--stone-cream);font-size:clamp(28px,4vw,42px);margin:0 0 14px;">Precision in every cut.</h2>
       <p style="color:var(--stone-sand-light);font-size:16px;margin:0;">From the quarry face to the finished block, every stage of our stone-cutting is built around accuracy, consistency and getting quality Ndarugo to site on time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="partner">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker" style="color:var(--rust);font-weight:700;letter-spacing:0.12em;font-size:14px;">GROWING TOGETHER</p>
+      <h2>Stock your machinery with us</h2>
+      <p>We're expanding into equipment hire and sales, and we're looking for partners with new or used heavy machinery to stock with us under agreed terms.</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner-card">
+        <h3>Why partner with us</h3>
+        <p>An established base in Komo, Kiambu County, with an existing customer network of quarry and construction operators, ready yard space to display machinery, and a team that knows the equipment.</p>
+      </div>
+      <div class="partner-card">
+        <h3>What we're looking for</h3>
+        <p>New or used stone-cutting machines, wheel loaders, bulldozers and other heavy equipment &mdash; especially Chinese brands &mdash; ready to place with a partner on the ground.</p>
+      </div>
+      <div class="partner-card">
+        <h3>How it works</h3>
+        <p>Terms agreed case by case &mdash; consignment, commission on each hire or sale, or a shared-revenue arrangement, depending on what suits the equipment and the partner.</p>
+      </div>
+    </div>
+    <div class="btn-row" style="margin-top:36px;">
+      <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20partnership%20to%20stock%20equipment.">Discuss a Partnership</a>
     </div>
   </div>
 </section>
