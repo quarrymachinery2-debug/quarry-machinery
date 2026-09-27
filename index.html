@@ -188,6 +188,22 @@
   .equip-card p{font-size:14.5px;color:var(--stone-sand-light);margin:0 0 10px;}
   .equip-card .brands{font-size:13px;color:var(--stone-sand);font-weight:700;letter-spacing:0.02em;line-height:1.5;}
 
+  /* FEATURED LISTING */
+  .listing-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:16px;margin-top:8px;
+  }
+  .listing-grid img{
+    width:100%;height:380px;object-fit:cover;
+    clip-path:polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
+  }
+  .listing-tag{
+    display:inline-block;background:var(--rust);color:var(--stone-cream);
+    font-size:12.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;
+    padding:6px 14px;margin-bottom:16px;
+    clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);
+  }
+
   /* PARTNER */
   .partner-grid{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -360,7 +376,7 @@
     <div class="section-head">
       <p class="kicker" style="font-weight:700;letter-spacing:0.12em;font-size:14px;">HIRE &amp; SALES</p>
       <h2>Heavy equipment, hired or sold</h2>
-      <p>Beyond our own site, we hire out and sell heavy machinery across these categories &mdash; and we're always open to new brands, especially from China and Europe.</p>
+      <p>Beyond our own site, we hire out and sell heavy machinery across these categories &mdash; and we're always open to new brands, especially from China.</p>
     </div>
   </div>
   <div class="wrap">
@@ -388,6 +404,23 @@
     </div>
     <div class="btn-row" style="margin-top:36px;">
       <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20hiring%2Fbuying%20heavy%20equipment.">Ask About Hire or Sale</a>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="featured" style="background:var(--stone-sand-light);">
+  <div class="wrap">
+    <div class="listing-tag">In Stock Now</div>
+    <div class="section-head" style="margin-bottom:32px;">
+      <h2>Deutz F413 V8 air-cooled engine</h2>
+      <p>A used Deutz F(L)413 air-cooled V8 diesel engine &mdash; the same engine that powers stone-cutting machines from MACCA, Pavoni and D'Amico. Available now for inspection.</p>
+    </div>
+    <div class="listing-grid">
+      <img src="images/engine-fl413-side.jpg" alt="Deutz F413 air-cooled V8 diesel engine, side view showing the cylinder bank">
+      <img src="images/engine-fl413-front.jpg" alt="Deutz F413 air-cooled V8 diesel engine, front view showing the cooling fan">
+    </div>
+    <div class="btn-row" style="margin-top:32px;">
+      <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20Deutz%20F413%20V8%20engine%20for%20sale.">Enquire About This Engine</a>
     </div>
   </div>
 </section>
