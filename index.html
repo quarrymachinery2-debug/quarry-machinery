@@ -233,6 +233,13 @@
   .equip-card .brands{font-size:13px;color:var(--stone-sand);font-weight:700;letter-spacing:0.02em;line-height:1.5;}
 
   /* SPARE PARTS SHOP */
+  .shop-tools{margin:0 0 22px;}
+  .shop-tools input{width:100%;max-width:560px;padding:14px 16px;font-size:16px;border:2px solid var(--stone-sand);background:#fff;color:var(--stone-dark);border-radius:0;font-family:inherit;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+  .chip{padding:9px 14px;font-size:14px;font-weight:700;border:2px solid var(--stone-charcoal);background:transparent;color:var(--stone-charcoal);cursor:pointer;font-family:inherit;}
+  .chip.on{background:var(--rust);border-color:var(--rust);color:#fff;}
+  .shop-count{font-size:14px;color:var(--stone-charcoal);margin:12px 0 0;}
+  .shop-empty{font-size:16px;padding:24px 0;}
   .shop-grid{
     display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
     gap:20px;margin-top:8px;
@@ -483,84 +490,38 @@
   <div class="wrap">
     <div class="section-head">
       <p class="kicker" style="color:var(--rust);font-weight:700;letter-spacing:0.12em;font-size:14px;">SPARE PARTS SHOP</p>
-      <h2>Genuine SKF bearings, in stock</h2>
-      <p>Heavy-duty bearings for quarry machinery, stone-cutting saws, loaders and more. Tap Order on WhatsApp and we'll confirm stock, price and delivery.</p>
+      <h2>Bearings and spare parts, in stock</h2>
+      <p>SKF, Koyo, NSK, FAG, Timken and more. Sizes are bore × outside diameter × width. Search by bearing number or pick a type, then tap Order on WhatsApp and we'll confirm stock, price and delivery.</p>
     </div>
-    <div class="shop-grid">
-
-      <div class="shop-card">
-        <img src="images/shop-22313-e.jpg" alt="SKF Explorer 22313 E spherical roller bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Spherical roller bearing</p>
-          <h3>SKF 22313 E</h3>
-          <p class="desc">SKF Explorer, made in Sweden.</p>
-          <p class="spec">65 &times; 140 &times; 48 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%2022313%20E%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="images/shop-22314-e.jpg" alt="SKF Explorer 22314 E spherical roller bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Spherical roller bearing</p>
-          <h3>SKF 22314 E</h3>
-          <p class="desc">SKF Explorer, made in Sweden.</p>
-          <p class="spec">70 &times; 150 &times; 51 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%2022314%20E%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="images/shop-21316-e.jpg" alt="SKF Explorer 21316 E spherical roller bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Spherical roller bearing</p>
-          <h3>SKF 21316 E</h3>
-          <p class="desc">SKF Explorer, made in Sweden.</p>
-          <p class="spec">80 &times; 170 &times; 39 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%2021316%20E%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="images/shop-22317-e.jpg" alt="SKF Explorer 22317 E spherical roller bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Spherical roller bearing</p>
-          <h3>SKF 22317 E</h3>
-          <p class="desc">SKF Explorer, made in Sweden.</p>
-          <p class="spec">85 &times; 180 &times; 60 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%2022317%20E%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="images/shop-33021-q.jpg" alt="SKF Explorer 33021/Q tapered roller bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Tapered roller bearing</p>
-          <h3>SKF 33021/Q</h3>
-          <p class="desc">SKF Explorer, made in Germany.</p>
-          <p class="spec">105 &times; 160 &times; 43 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%2033021%2FQ%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
-      <div class="shop-card">
-        <img src="images/shop-6022-2rs1-c3.jpg" alt="SKF Explorer 6022-2RS1/C3 sealed deep groove ball bearing boxes" loading="lazy">
-        <div class="cnt">
-          <p class="tag">Deep groove ball bearing</p>
-          <h3>SKF 6022-2RS1/C3</h3>
-          <p class="desc">SKF Explorer, sealed both sides, C3 clearance. Made in France.</p>
-          <p class="spec">110 &times; 170 &times; 28 mm</p>
-          <p class="price">Call for price<span>In stock</span></p>
-          <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20interested%20in%20the%20SKF%206022-2RS1%2FC3%20bearing." target="_blank" rel="noopener">Order on WhatsApp</a>
-        </div>
-      </div>
-
+    <div class="shop-tools">
+      <input type="search" id="shopSearch" placeholder="Search by bearing number or brand, e.g. 22313 or SKF" aria-label="Search spare parts">
+      <div class="chips"><button type="button" class="chip on" data-t="">All</button><button type="button" class="chip" data-t="Spherical roller">Spherical roller</button><button type="button" class="chip" data-t="Tapered roller">Tapered roller</button><button type="button" class="chip" data-t="Ball bearing">Ball bearing</button><button type="button" class="chip" data-t="Housing unit">Housing unit</button><button type="button" class="chip" data-t="Oil seal">Oil seal</button><button type="button" class="chip" data-t="Other">Other</button></div>
+      <p class="shop-count" id="shopCount"></p>
     </div>
+    <div class="shop-grid" id="shopGrid"></div>
+    <p class="shop-empty" id="shopEmpty" style="display:none;">No match. Message us on WhatsApp &mdash; we may have it in the shop but not yet listed.</p>
+    <script>
+    (function(){
+      var P=[{"i":"21316-e","n":"SKF 21316 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"80 × 170 × 39 mm"},{"i":"22313-e","n":"SKF 22313 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"65 × 140 × 48 mm"},{"i":"22314-e","n":"SKF 22314 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"70 × 150 × 51 mm"},{"i":"22317-e","n":"SKF 22317 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"85 × 180 × 60 mm"},{"i":"33021-q","n":"SKF 33021/Q","t":"Tapered roller","b":"SKF","d":"SKF Explorer, made in Germany.","s":"105 × 160 × 43 mm"},{"i":"6022-2rs1-c3","n":"SKF 6022-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed both sides, C3 clearance. Made in France.","s":"110 × 170 × 28 mm"},{"i":"skf-22212-e","n":"SKF 22212 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"60 × 110 × 28 mm"},{"i":"skf-22213-e","n":"SKF 22213 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"65 × 120 × 31 mm"},{"i":"skf-22214-e","n":"SKF 22214 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"70 × 125 × 31 mm"},{"i":"skf-22215-e","n":"SKF 22215 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"75 × 130 × 31 mm"},{"i":"skf-22216-e","n":"SKF 22216 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"80 × 140 × 33 mm"},{"i":"skf-22217-e","n":"SKF 22217 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"85 × 150 × 36 mm"},{"i":"skf-22218-e","n":"SKF 22218 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"90 × 160 × 40 mm"},{"i":"skf-22310-e","n":"SKF 22310 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"50 × 110 × 40 mm"},{"i":"skf-22311-e","n":"SKF 22311 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"55 × 120 × 43 mm"},{"i":"skf-22312-e","n":"SKF 22312 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer.","s":"60 × 130 × 46 mm"},{"i":"skf-22315-e","n":"SKF 22315 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"75 × 160 × 55 mm"},{"i":"skf-22316-e","n":"SKF 22316 E","t":"Spherical roller","b":"SKF","d":"SKF Explorer, made in Sweden.","s":"80 × 170 × 58 mm"},{"i":"skf-bs2-2210-2rs-vt143","n":"SKF BS2-2210-2RS/VT143","t":"Spherical roller","b":"SKF","d":"SKF Explorer, sealed. Made in Sweden.","s":"50 × 90 mm (bore × outside)"},{"i":"koyo-32211jr","n":"Koyo 32211 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"55 × 100 × 25 mm"},{"i":"koyo-32214jr","n":"Koyo 32214 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"70 × 125 × 26.25 mm"},{"i":"koyo-32217jr","n":"Koyo 32217 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"85 × 150 × 30.5 mm"},{"i":"koyo-32218jr","n":"Koyo 32218 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"90 × 160 × 32.5 mm"},{"i":"koyo-32311jr","n":"Koyo 32311 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"55 × 120 × 45.5 mm"},{"i":"koyo-32314jr","n":"Koyo 32314 JR","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"70 × 150 × 51 mm"},{"i":"koyo-3984-20","n":"Koyo 3984/20","t":"Tapered roller","b":"Koyo","d":"Koyo tapered roller bearing.","s":"88.9 mm bore (inch series)"},{"i":"koyo-dac40740042","n":"Koyo DAC40740042","t":"Other","b":"Koyo","d":"Koyo wheel bearing.","s":"40 × 74 × 42 mm"},{"i":"nsk-32312jr","n":"NSK 32312 JR","t":"Tapered roller","b":"NSK","d":"NSK tapered roller bearing.","s":"60 × 130 × 48.5 mm"},{"i":"nsk-hr32311j","n":"NSK HR32311J","t":"Tapered roller","b":"NSK","d":"NSK tapered roller bearing.","s":"55 × 120 × 45.5 mm"},{"i":"nsk-hr30309dj","n":"NSK HR30309DJ","t":"Tapered roller","b":"NSK","d":"NSK tapered roller bearing.","s":"45 × 100 × 27.25 mm"},{"i":"nsk-3984-20","n":"NSK 3984/20","t":"Tapered roller","b":"NSK","d":"NSK tapered roller bearing.","s":"88.9 mm bore (inch series)"},{"i":"nsk-38bwd22-zz","n":"NSK 38BWD22 ZZ","t":"Other","b":"NSK","d":"NSK bearing.","s":""},{"i":"fag-32210-a","n":"FAG 32210-A","t":"Tapered roller","b":"FAG","d":"FAG tapered roller bearing.","s":"50 × 90 × 21.75 mm"},{"i":"fag-2309","n":"FAG 2309","t":"Other","b":"FAG","d":"FAG bearing.","s":"45 × 100 × 36 mm"},{"i":"gt-32020","n":"GT 32020","t":"Tapered roller","b":"GT","d":"Tapered roller bearing.","s":"100 × 150 × 32 mm"},{"i":"kg-30316","n":"KG 30316","t":"Tapered roller","b":"KG","d":"Tapered roller bearing.","s":"80 × 170 × 42.5 mm"},{"i":"skf-3210-a-2rs1tn9-c3mt33","n":"SKF 3210 A-2RS1TN9/C3MT33","t":"Other","b":"SKF","d":"SKF Explorer double-row angular contact, sealed.","s":"50 × 90 × 30.2 mm"},{"i":"skf-3311-a-2rs1tn9-c3mt33","n":"SKF 3311 A-2RS1TN9/C3MT33","t":"Other","b":"SKF","d":"SKF Explorer double-row angular contact, sealed. Made in Austria.","s":"55 × 120 × 49.2 mm"},{"i":"skf-3312-a-2rs1tn9","n":"SKF 3312 A-2RS1TN9","t":"Other","b":"SKF","d":"SKF Explorer double-row angular contact, sealed. Made in Austria.","s":"60 × 130 × 54 mm"},{"i":"skf-nu309-ecp","n":"SKF NU309 ECP","t":"Other","b":"SKF","d":"SKF cylindrical roller bearing.","s":"45 × 100 × 25 mm"},{"i":"skf-6021-2rs1-c3","n":"SKF 6021-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"105 × 160 × 26 mm"},{"i":"skf-6213-nr","n":"SKF 6213 NR","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing with snap ring.","s":"65 × 120 × 23 mm"},{"i":"skf-6215-2rs1","n":"SKF 6215-2RS1","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"75 × 130 × 25 mm"},{"i":"skf-6216-2z","n":"SKF 6216-2Z","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, shielded.","s":"80 × 140 × 26 mm"},{"i":"skf-6217-2rs1-c3","n":"SKF 6217-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"85 × 150 × 28 mm"},{"i":"skf-62306-2rs1-c3","n":"SKF 62306-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"30 × 72 × 27 mm"},{"i":"skf-62309-2rs1-c3","n":"SKF 62309-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"45 × 100 × 36 mm"},{"i":"kg-62306-2rs","n":"KG 62306-2RS","t":"Ball bearing","b":"KG","d":"Sealed deep groove ball bearing.","s":"30 × 72 × 27 mm"},{"i":"skf-6305-2z-c3","n":"SKF 6305-2Z/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, shielded. Made in Italy.","s":"25 × 62 × 17 mm"},{"i":"skf-6306-2z-c3","n":"SKF 6306-2Z/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, shielded. Made in Bulgaria.","s":"30 × 72 × 19 mm"},{"i":"skf-6307-2rs1","n":"SKF 6307-2RS1","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"35 × 80 × 21 mm"},{"i":"skf-6308-2rs1-c3","n":"SKF 6308-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in Malaysia.","s":"40 × 90 × 23 mm"},{"i":"skf-6310-2rs1-c3","n":"SKF 6310-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"50 × 110 × 27 mm"},{"i":"skf-6311-2rs1-c3","n":"SKF 6311-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"55 × 120 × 29 mm"},{"i":"skf-6312-2rs1","n":"SKF 6312-2RS1","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"60 × 130 × 31 mm"},{"i":"skf-6312-2z-c3-and-2rs1","n":"SKF 6312-2Z/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, shielded. Also available 6312-2RS1.","s":"60 × 130 × 31 mm"},{"i":"skf-6313-2rs1-c3","n":"SKF 6313-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"65 × 140 × 33 mm"},{"i":"skf-6314-2rs1-c3","n":"SKF 6314-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"70 × 150 × 35 mm"},{"i":"skf-6315-2rs1","n":"SKF 6315-2RS1","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"75 × 160 × 37 mm"},{"i":"skf-6316-2rs1-c3","n":"SKF 6316-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"80 × 170 × 39 mm"},{"i":"skf-6317-2rs1-c3","n":"SKF 6317-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF Explorer, sealed. Made in France.","s":"85 × 180 × 41 mm"},{"i":"skf-6406-2rs1-c3","n":"SKF 6406-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"30 × 90 × 23 mm"},{"i":"skf-6410-2rs1-c3","n":"SKF 6410-2RS1/C3","t":"Ball bearing","b":"SKF","d":"SKF deep groove ball bearing, sealed.","s":"50 × 130 × 31 mm"},{"i":"fag-6004-c-2z-c3","n":"FAG 6004-C-2Z/C3","t":"Ball bearing","b":"FAG","d":"FAG deep groove ball bearing, shielded.","s":"20 × 42 × 12 mm"},{"i":"fag-6210-2zr-nachi-6210","n":"FAG 6210-2ZR","t":"Ball bearing","b":"FAG","d":"FAG 6210-2ZR (Nachi 6210 also available).","s":"50 × 90 × 20 mm"},{"i":"skf-6209-2z-c3-nachi-6209-2nse","n":"SKF 6209-2Z/C3","t":"Ball bearing","b":"SKF","d":"SKF 6209-2Z/C3 (Nachi 6209-2NSE also available).","s":"45 × 85 × 19 mm"},{"i":"nachi-6205-2nse9cm","n":"Nachi 6205-2NSE9CM","t":"Ball bearing","b":"Nachi","d":"Nachi sealed deep groove ball bearing.","s":"25 × 52 × 15 mm"},{"i":"nachi-6213-2nse","n":"Nachi 6213-2NSE","t":"Ball bearing","b":"Nachi","d":"Nachi sealed deep groove ball bearing.","s":"65 × 120 × 23 mm"},{"i":"koyo-6206-2rscm","n":"Koyo 6206-2RSCM","t":"Ball bearing","b":"Koyo","d":"Koyo sealed deep groove ball bearing.","s":"30 × 62 × 16 mm"},{"i":"nsk-6207-dducm","n":"NSK 6207 DDUCM","t":"Ball bearing","b":"NSK","d":"NSK sealed deep groove ball bearing.","s":"35 × 72 × 17 mm"},{"i":"timken-6002-zz-c3","n":"Timken 6002-ZZ/C3","t":"Ball bearing","b":"Timken","d":"Timken shielded deep groove ball bearing.","s":"15 × 32 × 9 mm"},{"i":"timken-6200-zz-c3","n":"Timken 6200-ZZ/C3","t":"Ball bearing","b":"Timken","d":"Timken shielded deep groove ball bearing.","s":"10 × 30 × 9 mm"},{"i":"timken-6203-zz-c3","n":"Timken 6203-ZZ/C3","t":"Ball bearing","b":"Timken","d":"Timken shielded deep groove ball bearing.","s":"17 × 40 × 12 mm"},{"i":"timken-6301-zz-c3","n":"Timken 6301-ZZ/C3","t":"Ball bearing","b":"Timken","d":"Timken shielded deep groove ball bearing.","s":"12 × 37 × 12 mm"},{"i":"skf-sy-507","n":"SKF SY 507","t":"Housing unit","b":"SKF","d":"SKF ball bearing housing unit.","s":"35 mm shaft"},{"i":"skf-sy-508","n":"SKF SY 508","t":"Housing unit","b":"SKF","d":"SKF ball bearing housing unit.","s":"40 mm shaft"},{"i":"oil-seals-assorted","n":"Oil seals, assorted sizes","t":"Oil seal","b":"","d":"Assorted oil seals. Tell us the size you need.","s":""},{"i":"oil-seals-large","n":"Large oil seals","t":"Oil seal","b":"","d":"Large oil seals. Tell us the size you need.","s":""},{"i":"oil-seals-dto-70x90x12","n":"DTO Oil seal 70 × 90 × 12","t":"Oil seal","b":"DTO","d":"DTO oil seal.","s":"70 × 90 × 12 mm"}];
+      var grid=document.getElementById('shopGrid'),q=document.getElementById('shopSearch'),cnt=document.getElementById('shopCount'),emp=document.getElementById('shopEmpty'),tf='';
+      function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+      function render(){
+        var s=q.value.toLowerCase().replace(/[\s\-\/]/g,''),h='',n=0;
+        P.forEach(function(p){
+          if(tf&&p.t!==tf)return;
+          if(s&&(p.n+p.b+p.t).toLowerCase().replace(/[\s\-\/]/g,'').indexOf(s)<0)return;
+          n++;
+          var msg=encodeURIComponent("Hi, I'm interested in the "+p.n+" ("+p.t.toLowerCase()+"). Is it in stock and what's the price?");
+          h+='<div class="shop-card"><img src="images/shop-'+p.i+'.jpg" alt="'+esc(p.n)+'" loading="lazy"><div class="cnt"><p class="tag">'+esc(p.t)+'</p><h3>'+esc(p.n)+'</h3><p class="desc">'+esc(p.d)+'</p>'+(p.s?'<p class="spec">'+esc(p.s)+'</p>':'')+'<p class="price">Call for price<span>In stock</span></p><a class="btn btn-primary" href="https://wa.me/254712272180?text='+msg+'" target="_blank" rel="noopener">Order on WhatsApp</a></div></div>';
+        });
+        grid.innerHTML=h;cnt.textContent=n+' item'+(n===1?'':'s');emp.style.display=n?'none':'block';
+      }
+      q.addEventListener('input',render);
+      document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+        document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});c.classList.add('on');tf=c.getAttribute('data-t');render();});});
+      render();
+    })();
+    </script>
     <div class="btn-row" style="margin-top:36px;">
       <a class="btn btn-primary" href="https://wa.me/254712272180?text=Hi%2C%20I%27m%20looking%20for%20a%20spare%20part%20%E2%80%94%20can%20you%20help%3F">Need a part not listed? Ask us</a>
     </div>
