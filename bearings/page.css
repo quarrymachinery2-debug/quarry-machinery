@@ -1,1 +1,13 @@
- 
+*{box-sizing:border-box}body{margin:0;font-family:'Archivo',sans-serif;background:#f2ede1;color:#221f1c;line-height:1.55}
+a{color:#823c20}header{background:#221f1c;padding:16px 20px}header a{color:#f2ede1;text-decoration:none;font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.02em}
+.wrap{max-width:1000px;margin:0 auto;padding:28px 20px 48px}.crumbs{font-size:14px;margin:0 0 18px}
+.prod{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}@media(max-width:720px){.prod{grid-template-columns:1fr}}
+.prod img{width:100%;height:auto;display:block;background:#221f1c}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:44px;line-height:1.05;margin:0 0 8px}
+.tag{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#823c20;margin:0 0 6px}
+table{border-collapse:collapse;width:100%;margin:16px 0}td{padding:9px 0;border-bottom:1px solid rgba(34,31,28,.14);font-size:15px}td:first-child{font-weight:700;width:42%}
+.btn{display:inline-block;background:#a8502c;color:#fff;padding:15px 26px;font-weight:700;text-decoration:none;margin:8px 8px 8px 0}
+.btn.alt{background:transparent;color:#221f1c;border:2px solid #221f1c;padding:13px 24px}
+h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:30px;margin:40px 0 10px}
+.rel{display:flex;flex-wrap:wrap;gap:8px}.rel a{padding:8px 12px;background:#e7dcc4;text-decoration:none;color:#221f1c;font-weight:600;font-size:14px}
+footer{background:#221f1c;color:#e7dcc4;padding:22px 20px;font-size:14px;text-align:center}
